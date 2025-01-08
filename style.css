@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    gap: 4px;
+    gap: 10px;
     padding: 20px;
     font-family: myFirstFont;
 }
@@ -58,20 +58,12 @@ body {
 .container .display .result{
     font-size: larger;
     opacity: 70%;
+    position: relative;
 }
 .container .display .current{
     font-size: xxx-large;
     font-weight: bold;
     position: relative;
-}
-
-.container .display::before{
-    content: '0000000000000';
-    position: relative;
-    font-size: xxx-large;
-    font-weight: bold;
-    opacity: 9%;
-    bottom: -74px;
 }
 
 .container .remove {
