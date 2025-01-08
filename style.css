@@ -1,20 +1,145 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("static/DIGITAL-7\ \(MONO\).TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     height: 100%;
     width: 100%;
-    background-image: url("static/dark-pattern-with-calculator-rulers_414931-69.jpg");
+    background-image: url("static/133510159_10141608.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80%;
+    width: 370px;
+    background-color: rgba(76, 76, 255, 0.774);
+    border: solid 1px rgb(2, 2, 218);
+    border-radius: 20px;
+    box-shadow: 0 0 50px 10px rgba(8,7,16,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .display {
+    background-color: rgba(201, 201, 201, 0.959);
+    border: solid 1px rgb(2, 2, 218);
+    position: relative;
+    height: 26%;
+    width: 100%;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px;
+    font-family: myFirstFont;
+}
+
+.container .display .result{
+    font-size: larger;
+    opacity: 70%;
+}
+.container .display .current{
+    font-size: xxx-large;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .display::before{
+    content: '0000000000000';
+    position: relative;
+    font-size: xxx-large;
+    font-weight: bold;
+    opacity: 9%;
+    bottom: -74px;
+}
+
+.container .remove {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.container .remove .clear {
+    width: 100%;
+    border: none;
+    border-radius: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: rgb(189, 160, 0);
+    transition: background-color ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+.container .remove .clear:hover {
+    background-color: rgb(94, 80, 0);
+}
+
+.container .remove .delete {
+    width: 100%;
+    border: none;
+    border-radius: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: #b10101;
+    transition: background-color ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+.container .remove .delete:hover {
+    background-color: #4b0000;
+}
+
+.container .num_operators {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    height: 58%;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.container .num_operators button {
+    width: 23%;
+    height: 23%;
+    border-radius: 13px;
+    border: none;
+    font-family: myFirstFont;
+    font-size: x-large;
+    text-align: center;
+    transition: background-color ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+.container .num_operators button:hover {
+    background-color: rgb(180, 180, 180);
 }
