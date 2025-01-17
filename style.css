@@ -53,17 +53,21 @@ body {
     gap: 10px;
     padding: 20px;
     font-family: myFirstFont;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .container .display .result{
     font-size: larger;
     opacity: 70%;
     position: relative;
+    min-height: 20px;
 }
 .container .display .current{
     font-size: xxx-large;
     font-weight: bold;
     position: relative;
+    min-height: 50px;
 }
 
 .container .remove {
@@ -86,6 +90,7 @@ body {
     color: rgb(189, 160, 0);
     transition: background-color ease-in-out 0.4s;
     cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(8,7,16,0.6);
 }
 
 .container .remove .clear:hover {
@@ -101,6 +106,7 @@ body {
     color: #b10101;
     transition: background-color ease-in-out 0.4s;
     cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(8,7,16,0.6);
 }
 
 .container .remove .delete:hover {
@@ -130,8 +136,9 @@ body {
     text-align: center;
     transition: background-color ease-in-out 0.4s;
     cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(8,7,16,0.6);
 }
 
 .container .num_operators button:hover {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(109, 109, 109);
 }
