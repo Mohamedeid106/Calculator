@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         current.innerHTML = 0;
         result.innerHTML = '';
         num1 = undefined;
+        operator = undefined;
         equal_btn.setAttribute("disapled","");
     });
     
